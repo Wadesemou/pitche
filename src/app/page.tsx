@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import { useState } from "react";
 import HTMLFlipBook from "react-pageflip";
 import page1 from "../../public/GDI ADVISORS - Plaquette - VF-03.pdf/1.png";
 import page2 from "../../public/GDI ADVISORS - Plaquette - VF-03.pdf/2.png";
@@ -11,76 +10,7 @@ import page6 from "../../public/GDI ADVISORS - Plaquette - VF-03.pdf/6.png";
 import page7 from "../../public/GDI ADVISORS - Plaquette - VF-03.pdf/7.png";
 import page8 from "../../public/GDI ADVISORS - Plaquette - VF-03.pdf/8.png";
 
-export type Courrier = {
-  courriers: [
-    {
-      titre: "demande de transfere de poste";
-      ref: "009nh2";
-      date: "12/23/2023 ";
-      demandeur: "Diop Pape Demba";
-      destinataire: [
-        {
-          nom: "Semou";
-          prenom: "WADE";
-          email: "semou.wage@gdi-advisors.com";
-        }
-      ];
-    }
-  ];
-};
 export default function MyBook() {
-  const courrier = [
-    {
-      titre: "demande de transfere de poste",
-      ref: "009nh2",
-      date: "12/23/2023 ",
-      demandeur: "Diop Pape Demba",
-      destinataire: [
-        {
-          nom: "Semou",
-          prenom: "WADE",
-          email: "semou.wage@gdi-advisors.com",
-        },
-      ],
-    },
-    {
-      titre: "demande de transfere de poste",
-      ref: "009nh2",
-      date: "12/23/2023 ",
-      demandeur: "Diop Pape Demba",
-      destinataire: [
-        {
-          nom: "Semou",
-          prenom: "WADE",
-          email: "semou.wage@gdi-advisors.com",
-        },
-      ],
-    },
-  ];
-
-  const [dislayfullimg, setDisplayfullimg] = useState(false);
-  const [filter, setfilter] = useState(false);
-
-  const [reference, setReference] = useState("");
-  const [titre, setTitre] = useState("");
-  const [date, setDate] = useState("");
-  const [organisation, setOrganisation] = useState("");
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    // Faire quelque chose avec les valeurs filtrées, par exemple :
-    console.log("Référence:", reference);
-    console.log("Titre:", titre);
-    console.log("Date:", date);
-    console.log("Organisation:", organisation);
-
-    // Réinitialiser les valeurs du formulaire
-    setReference("");
-    setTitre("");
-    setDate("");
-    setOrganisation("");
-  };
   return (
     <main className="h-screen w-full bg-blue-900  ">
       <HTMLFlipBook
