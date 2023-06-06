@@ -82,7 +82,7 @@ export default function MyBook() {
     setOrganisation("");
   };
   return (
-    <div className="h-screen w-full bg-blue-900  ">
+    <main className="h-screen w-full bg-blue-900  ">
       <HTMLFlipBook
         width={930}
         height={968}
@@ -171,6 +171,6 @@ export default function MyBook() {
 
         {/* <div className="demoPage  bg-slate-800"></div> */}
       </HTMLFlipBook>
-    </div>
+    </main>
   );
 }
