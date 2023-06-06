@@ -14,29 +14,29 @@ export default function MyBook() {
   return (
     <main className="h-screen w-full bg-blue-900  ">
       <HTMLFlipBook
-        autoSize={false}
+        autoSize={true}
         showCover={false}
         swipeDistance={3}
         disableFlipByClick={false}
         maxShadowOpacity={2}
         mobileScrollSupport={true}
-        clickEventForward={false}
+        clickEventForward={true}
         showPageCorners={true}
         useMouseEvents={true}
-        usePortrait={false}
+        usePortrait={true}
         drawShadow={true}
         startZIndex={0}
         style={{}}
         startPage={0}
-        size="fixed"
-        minHeight={960}
-        minWidth={930}
+        size="stretch"
+        minHeight={200}
+        minWidth={150}
         maxHeight={960}
         flippingTime={1000}
         maxWidth={930}
-        width={930}
-        height={968}
-        className=" bg-slate-700 justify-start border-slate-700 mx-auto"
+        width={920}
+        height={958}
+        className="bg-slate-700 justify-start border-slate-700 mx-auto"
       >
         <div className="demoPage relative ">
           <Image
@@ -48,13 +48,13 @@ export default function MyBook() {
           />
           <div className="absolute right-0 top-0 opacity-70 bg-gradient-to-r from-transparent via-transparent to-gray-900   w-full h-full"></div>
         </div>
-        <div className="demoPage relative ">
+        <div className="demoPage relative">
           <Image
             src={page2}
             width="800"
             height="500"
             alt=""
-            className="w-full h-full  border-slate-400 border-l-4 "
+            className="w-full h-full border-slate-400 border-l-4 "
           />
           <div className="absolute right-0 top-0 opacity-70 bg-gradient-to-l  border-slate-900 border-l-4 from-transparent via-transparent to-gray-900   w-full h-full"></div>
         </div>
