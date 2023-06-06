@@ -14,6 +14,26 @@ export default function MyBook() {
   return (
     <main className="h-screen w-full bg-blue-900  ">
       <HTMLFlipBook
+        autoSize={false}
+        showCover={false}
+        swipeDistance={3}
+        disableFlipByClick={false}
+        maxShadowOpacity={2}
+        mobileScrollSupport={true}
+        clickEventForward={false}
+        showPageCorners={true}
+        useMouseEvents={true}
+        usePortrait={false}
+        drawShadow={true}
+        startZIndex={0}
+        style={{}}
+        startPage={0}
+        size="fixed"
+        minHeight={960}
+        minWidth={930}
+        maxHeight={960}
+        flippingTime={1000}
+        maxWidth={930}
         width={930}
         height={968}
         className=" bg-slate-700 justify-start border-slate-700 mx-auto"
